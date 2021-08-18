@@ -1,5 +1,7 @@
 from rest_framework import serializers
+from JHs_app.models import User
 
-class UserSerializer(serializers.Serializer):
-    Email = serializers.EmailField()
-    Password = serializers.CharField()
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('email', 'password')
