@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class JhsAppConfig(AppConfig):
+class JhsRestConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'JHs_app'
+    name = 'JHs_rest'

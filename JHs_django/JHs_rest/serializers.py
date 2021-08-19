@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from JHs_app.models import User
+from JHs_rest.models import User
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
